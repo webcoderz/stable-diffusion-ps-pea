@@ -12,7 +12,7 @@ function isBlob(threshold: number = 1000) {
         if (obj instanceof Uint8Array && obj.length > threshold) {
             return true;
         }
-        if (obj instanceof Blob && obj.length > threshold) {
+        if (obj instanceof Blob ) {
             return true;
         }
         return false;
